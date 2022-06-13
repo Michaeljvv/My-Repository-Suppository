@@ -2,26 +2,33 @@
 from tkinter import *
 import random
 #--------------------#
-#----------Window tings-------------#
+#----------Window tings-----------------------------------------------------------------------------------------#
 window = Tk()
 window.title("DICE ROLLER")
 window.configure(background="black")
-#----------------------------------#
+window.geometry("120x80")
+window.resizable(False,False)
+window.iconbitmap('INSERT YOUR OWN PNG FILE LOCATION HERE FOR A IMAGE (Make sure you change the "\" to "/")')
+#---------------------------------------------------------------------------------------------------------------#
 
-#-------------------------------Def Functions-------------------------------------#
+#-------------------------------Def Functions------------------------------------------#
 def roll ():
-    a = Random_Number =random.randint(1,6)
-    Label(text="You Rolled a: ",bg="black",fg="red").grid(row=3,column=1)
-    Label(text= Random_Number,bg="black",fg="red").grid(row=3,column=2)
-#---------------------------------------------------------------------------------#
-
+    a = Random_Number = random.randint(1,6)
+    Label(text="You Rolled a: ",bg="black",fg="red",font="Times").grid(row=3,column=1)
+    Label(text= Random_Number,bg="white",fg="black",font="Times").grid(row=3,column=2)
+#--------------------------------------------------------------------------------------#
 
 #-----------------------------------Labels----------------------------------------#
-Label(text="DICE ROLLER", bg="black", fg="red").grid(row=1,column=1)
-
+Label(text="DICE ROLLER", bg="black", fg="red",font="Times").grid(row=1,column=1)
+ 
 #---------------------------------------------------------------------------------#
 
 #-------------------------Buttons------------------------#
 Button(text="Roll",command= roll).grid(row=2,column=1)
 #--------------------------------------------------------#
 window.mainloop()
+
+
+
+
+#Creator of this code -Michael Jansen Van Vuuren
