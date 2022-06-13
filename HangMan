@@ -1,0 +1,17 @@
+
+print("HANG-MAN")
+print('--------')
+
+
+User_Word = input("Player one Insert the word the other players must guess ")
+
+User_Guess = input("Now guess the word ")
+
+if User_Guess == User_Word:
+    print("You guess right")
+else:
+    print("You guessed wrong")
+    
+
+
+#Creator Michael Jansen Van Vuuren and yes i was very very lazy
